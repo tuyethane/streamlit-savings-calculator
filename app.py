@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-st.image("logo.png", width=120)
+st.image("logo.png")
 st.set_page_config(
     page_title="Tính Lãi Gửi Tiết Kiệm",
     page_icon="💰",
