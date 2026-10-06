@@ -135,13 +135,29 @@ if 'show_result' not in st.session_state:
 st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
 st.markdown(
     """
-    <div style='text-align:center;'>
-        <img src='https://raw.githubusercontent.com/tuyethane/streamlit-savings-calculator/main/logo.png' width='120'>
-        <h1 style='margin-top: 10px; color: #d9534f;'>💰 TÍNH LÃI GỬI TIẾT KIỆM</h1>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .page-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .header-section {
+        background: linear-gradient(135deg, #d9534f 0%, #c9302c 100%);
+        padding: 28px 20px;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        color: white;
+    }
+
+    .header-section h1 {
+        font-size: clamp(1.8rem, 2vw, 2.5rem);
+        font-weight: 700;
+        margin: 10px 0 0 0;
+    }
 
 st.markdown('<div class="content-section">', unsafe_allow_html=True)
 
