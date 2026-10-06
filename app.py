@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-st.image("https://raw.githubusercontent.com/tuyethane/streamlit-savings-calculator/main/logo.png", width=120)
 st.set_page_config(
     page_title="Tính Lãi Gửi Tiết Kiệm",
     page_icon="💰",
@@ -136,9 +135,9 @@ if 'show_result' not in st.session_state:
 st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
 st.markdown(
     """
-    <div class="header-section">
-        <img class="logo-img" src="https://raw.githubusercontent.com/tuyethane/streamlit-savings-calculator/main/logo.png" />
-        <h1>💰 TÍNH LÃI GỬI TIẾT KIỆM</h1>
+    <div style='text-align:center;'>
+        <img src='https://raw.githubusercontent.com/tuyethane/streamlit-savings-calculator/main/logo.png' width='120'>
+        <h1 style='margin-top: 10px; color: #d9534f;'>💰 TÍNH LÃI GỬI TIẾT KIỆM</h1>
     </div>
     """,
     unsafe_allow_html=True
