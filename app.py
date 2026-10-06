@@ -213,35 +213,6 @@ if st.session_state.show_result:
         # Kết quả tóm tắt
         # ---------------------------
         st.markdown('<div class="result-section">', unsafe_allow_html=True)
-        st.markdown(
-            f"""
-            <div class="result-box">
-                <div class="result-label">Tổng tiền lãi</div>
-                <div class="result-value">{tong_tien_lai:,.0f} VNĐ</div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        st.markdown(
-            f"""
-            <div class="result-box">
-                <div class="result-label">Số tiền gốc</div>
-                <div class="result-value">{so_tien_gui:,.0f} VNĐ</div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        st.markdown(
-            f"""
-            <div class="result-box">
-                <div class="result-label">Gốc + Lãi</div>
-                <div class="result-value">{tong_tien:,.0f} VNĐ</div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        st.markdown('</div>', unsafe_allow_html=True)
-
         # ---------------------------
         # Thông tin chi tiết
         # ---------------------------
