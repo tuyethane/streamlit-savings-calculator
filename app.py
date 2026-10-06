@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+
 st.set_page_config(
     page_title="Tính Lãi Gửi Tiết Kiệm",
     page_icon="💰",
@@ -30,12 +31,6 @@ st.markdown(
         font-size: clamp(1.8rem, 2vw, 2.5rem);
         font-weight: 700;
         margin: 10px 0 0 0;
-    }
-
-    .logo-img {
-        width: 110px;
-        height: auto;
-        border-radius: 14px;
     }
 
     .content-section {
@@ -133,31 +128,16 @@ if 'show_result' not in st.session_state:
 
 # Header
 st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-st.markdown(
-    """
-    <style>
-    * {
-        box-sizing: border-box;
-    }
+st.markdown('<div class="header-section">', unsafe_allow_html=True)
 
-    .page-wrap {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
+# Logo + Title
+col_logo, col_title = st.columns([1, 3])
+with col_logo:
+    st.image("https://raw.githubusercontent.com/tuyethane/streamlit-savings-calculator/main/logo.png", width=100)
+with col_title:
+    st.markdown('<h1 style="margin:0; padding-top:15px;">💰 TÍNH LÃI GỬI TIẾT KIỆM</h1>', unsafe_allow_html=True)
 
-    .header-section {
-        background: linear-gradient(135deg, #d9534f 0%, #c9302c 100%);
-        padding: 28px 20px;
-        border-radius: 20px 20px 0 0;
-        text-align: center;
-        color: white;
-    }
-
-    .header-section h1 {
-        font-size: clamp(1.8rem, 2vw, 2.5rem);
-        font-weight: 700;
-        margin: 10px 0 0 0;
-    }
+st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown('<div class="content-section">', unsafe_allow_html=True)
 
