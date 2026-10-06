@@ -217,4 +217,4 @@ else:
     st.warning("⚠️ Vui lòng nhập số tiền gửi và lãi suất hợp lệ.")
 
 st.markdown("---")
-st.caption("📌 Ứng dụng này chỉ mang tính tham khảo, không phải lời khuyên tài chính.")\
+st.caption("📌 Ứng dụng này chỉ mang tính tham khảo, không phải lời khuyên tài chính.")
